@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function WeatherApp() {
     const[weatherInfo,setWeatherInfo] =useState({
-                city: "Lucknow",
+        city: "Lucknow",
         Feels_Like : 19.56,
         Ground_Level : 996,
         Humidity : 100,

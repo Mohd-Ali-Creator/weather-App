@@ -19,6 +19,7 @@ export default function SearchBox( {updateInfo} ) {
         let jsonResponse = await response.json();
         console.log(jsonResponse);
         let result={
+            city: jsonResponse.name,
             Feels_Like : jsonResponse.main.feels_like,
             Ground_Level : jsonResponse.main.grnd_level,
             Humidity : jsonResponse.main.humidity,

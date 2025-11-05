@@ -3,6 +3,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import "./Infobox.css";
+import SearchBox from "./SearchBox.jsx"
+
 
 
 export default function InfoBox( {info} ){
@@ -44,7 +46,6 @@ let RAIN_URL="https://www.bing.com/images/search?view=detailV2&ccid=9E0c01lp&id=
       </CardContent>
     </Card>
              </div>
-
         </div>
     );
 }
