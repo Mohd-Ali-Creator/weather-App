@@ -43,7 +43,7 @@ let RAIN_URL="https://www.bing.com/images/search?view=detailV2&ccid=9E0c01lp&id=
         <p> Temperature : {info.Temperature}&deg;C</p>
         <p> Weather : {info.weather}</p>
         </Typography>
-      </CardContent>
+      </CardContent>git 
     </Card>
              </div>
         </div>
