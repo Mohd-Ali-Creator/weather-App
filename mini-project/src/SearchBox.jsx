@@ -12,10 +12,14 @@ export default function SearchBox( {updateInfo} ) {
     let API_KEY ="8c409a787200d9066ab6d8a1d9a738fa";
 
     let getWeatherInfo = async () =>{
-        try{
-            const response = await fetch(
+        const response = await fetch(
             `${API_URL}?q=${city}&appid=${API_KEY}&units=metric`
         );
+
+        if (!response.ok) {
+            throw new Error("Unable to fetch weather data");
+        }
+
         let jsonResponse = await response.json();
         console.log(jsonResponse);
         let result={
@@ -31,10 +35,7 @@ export default function SearchBox( {updateInfo} ) {
         }
         console.log(result);
         return result;
-    }catch(err){
-        throw err;
     }
-        }
 
     let handleChange = (evt) =>{
         setCity(evt.target.value);
@@ -44,9 +45,10 @@ export default function SearchBox( {updateInfo} ) {
         try{
             evt.preventDefault();
         console.log(city);
+        let newInfo =await getWeatherInfo();
         setCity("");
-         let newInfo =await getWeatherInfo();
-         updateInfo(newInfo);
+        setError(false);
+        updateInfo(newInfo);
         }catch(err){
             setError(true);
         }
