@@ -6,3 +6,4 @@ Used APi from weathermap to fetch data from api and render to the weather app ;
 
 # made to enhance and comfortable on react
 
+adding to check merging concept
