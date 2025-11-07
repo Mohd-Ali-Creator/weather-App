@@ -6,4 +6,9 @@ Used APi from weathermap to fetch data from api and render to the weather app ;
 
 # made to enhance and comfortable on react
 
+# adding a new feature to check the branch commons in it.
+just to check the commonds
+something else
+
+
 adding to check merging concept
