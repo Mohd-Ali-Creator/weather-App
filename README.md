@@ -12,3 +12,4 @@ something else
 
 
 git addeded
+now checking to add a comment to check branch merging problem to solve 
